@@ -32,22 +32,19 @@
 <script src="resources/assets/js/custom/validateEmail.js"></script>
 <script src="resources/assets/js/custom/username.js"></script>
 <script type="text/javascript">
-    
-    </script>
+	
+</script>
 
 </head>
 
 <body>
 	<%
-
-//   response.addHeader("Cache-Control", "no-cache,no-store,private,must-revalidate,max-stale=0,post-check=0,pre-check=0"); 
-//   response.addHeader("Pragma", "no-cache"); 
-//   response.addDateHeader ("Expires", 0);
-   %>
+		//   response.addHeader("Cache-Control", "no-cache,no-store,private,must-revalidate,max-stale=0,post-check=0,pre-check=0"); 
+		//   response.addHeader("Pragma", "no-cache"); 
+		//   response.addDateHeader ("Expires", 0);
+	%>
 	<section id="container">
-		<!-- **********************************************************************************************************************************************************
-      TOP BAR CONTENT & NOTIFICATIONS
-      *********************************************************************************************************************************************************** -->
+		<!--  TOP BAR CONTENT & NOTIFICATIONS -->
 		<!--header start-->
 		<header class="header black-bg">
 			<div class="sidebar-toggle-box">
@@ -55,7 +52,7 @@
 					data-original-title="Toggle Navigation"></div>
 			</div>
 			<!--logo start-->
-			<a href="index.html" class="logo"><b>.</b></a>
+			<a href="index.html" class="logo"><b>TW</b></a>
 			<!--logo end-->
 			<div class="nav notify-row" id="top_menu">
 				<!--  notification start -->
@@ -124,8 +121,7 @@
 								</div>
 								<button type="submit" class="btn btn-theme">Search</button>
 							</form>
-						</div>
-						<!-- /form-panel -->
+						</div> <!-- /form-panel -->
 					</li>
 				</ul>
 				<!--  notification end -->
@@ -140,9 +136,7 @@
 		</header>
 		<!--header end-->
 
-		<!-- **********************************************************************************************************************************************************
-      MAIN SIDEBAR MENU
-      *********************************************************************************************************************************************************** -->
+		<!--  MAIN SIDEBAR MENU -->
 		<!--sidebar start-->
 		<aside>
 			<div id="sidebar" class="nav-collapse ">
@@ -151,7 +145,7 @@
 
 					<p class="centered">
 						<a href="profile?personId=${sessionScope.user.getuId()}"><img
-							onerror="this.src='resources/assets/img/default.jpg';"
+							onerror="this.src='resources/assets/img/default.png';"
 							src="${sessionScope.user.getPerson().getProfilePicPath()}"
 							class="img-circle" width="60" />
 							<h5 class="centered">${sessionScope.user.getPerson().getFirstName()}
@@ -181,9 +175,7 @@
 		</aside>
 		<!--sidebar end-->
 
-		<!-- **********************************************************************************************************************************************************
-      MAIN CONTENT
-      *********************************************************************************************************************************************************** -->
+		<!-- MAIN CONTENT -->
 		<!--main content start-->
 		<section id="main-content">
 			<section class="wrapper site-min-height">
@@ -197,7 +189,7 @@
 										<div class="photo-wrapper">
 											<div class="photo">
 												<a class="fancybox" href="${person.getProfilePicPath()}"><img
-													onerror="this.src='resources/assets/img/default.jpg';"
+													onerror="this.src='resources/assets/img/default.png';"
 													class="img-responsive" alt="Profile Pic"
 													src="${person.getProfilePicPath()}"></a>
 											</div>
@@ -324,7 +316,7 @@
 								<div class="row mtpost">
 									<div class="form-panel">
 										<a href="profile.html"><img
-											onerror="this.src='resources/assets/img/default.jpg';"
+											onerror="this.src='resources/assets/img/default.png';"
 											src="${post.getPerson().getProfilePicPath()}" width=40px
 											class="img-circle pull-left" />
 											<h4>&nbsp; ${post.getPerson().getFirstName()}
@@ -344,7 +336,7 @@
 										<div class="postEnd commentSection">
 											<c:forEach var="comment" items="${post.getComments()}">
 												<a href="profile?personId=${comment.getPerson().getpId()}"><img
-													onerror="this.src='resources/assets/img/default.jpg';"
+													onerror="this.src='resources/assets/img/default.png';"
 													src="${comment.getPerson().getProfilePicPath()}" width=20px
 													class="img-circle pull-left" />
 													<h5>&nbsp; ${comment.getPerson().getFirstName()}
@@ -391,15 +383,10 @@
 							</div>
 						</form>
 					</div>
-					<!-- **********************************************************************************************************************************************************
-      RIGHT SIDEBAR CONTENT
-      *********************************************************************************************************************************************************** -->
+					<!--  RIGHT SIDEBAR CONTENT -->
 
 					<div class="col-lg-3 ds">
 						<!--COMPLETED ACTIONS DONUTS CHART-->
-
-
-
 					</div>
 					<!-- /col-lg-3 -->
 				</div>
@@ -415,10 +402,9 @@
 	<!--main content end-->
 	<!--footer start-->
 	<footer class="site-footer">
-		<div class="text-center">2015 - Zap.co</div>
+		<div class="text-center">2018 - Travel Wise</div>
 	</footer>
 	<!--footer end-->
-	</section>
 
 	<!-- js placed at the end of the document so the pages load faster -->
 	<script src="resources/assets/js/jquery.js"></script>
@@ -439,29 +425,28 @@
 	<!--script for this page-->
 
 	<script type="text/javascript">
-      $(function() {
-        //    fancybox
-          jQuery(".fancybox").fancybox();
-      });
-    </script>
+		$(function() {
+			//    fancybox
+			jQuery(".fancybox").fancybox();
+		});
+	</script>
 	<script>
-      //custom select box
+		//custom select box
 
-      $(function(){
-          $('select.styled').customSelect();
-      });
-
-  </script>
+		$(function() {
+			$('select.styled').customSelect();
+		});
+	</script>
 
 	<script type="text/javascript">
-  $(".fancybox").fancybox({
-	    fitToView: false,
-	    onStart: function () {
-	        this.width = 10;
-	        this.height = 10;
-	    }
-	});
-  </script>
+		$(".fancybox").fancybox({
+			fitToView : false,
+			onStart : function() {
+				this.width = 10;
+				this.height = 10;
+			}
+		});
+	</script>
 
 </body>
 </html>

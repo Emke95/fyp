@@ -24,16 +24,14 @@
   <body>
 
   <section id="container" >
-      <!-- **********************************************************************************************************************************************************
-      TOP BAR CONTENT & NOTIFICATIONS
-      *********************************************************************************************************************************************************** -->
+      <!--TOP BAR CONTENT & NOTIFICATIONS -->
       <!--header start-->
       <header class="header black-bg">
               <div class="sidebar-toggle-box">
                   <div class="fa-white fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a href="index.html" class="logo"><b>Travel Wise</b></a>
+            <a href="index.html" class="logo"><b>TW</b></a>
             <!--logo end-->
             <div class="nav notify-row" id="top_menu">
                 <!--  notification start -->
@@ -118,9 +116,9 @@
         </header>
       <!--header end-->
       
-      <!-- **********************************************************************************************************************************************************
+      <!-- 
       MAIN SIDEBAR MENU
-      *********************************************************************************************************************************************************** -->
+       -->
       <!--sidebar start-->
       <aside>
           <div id="sidebar"  class="nav-collapse ">
@@ -163,9 +161,9 @@
       </aside>
       <!--sidebar end-->
       
-      <!-- **********************************************************************************************************************************************************
+      <!-- 
       MAIN CONTENT
-      *********************************************************************************************************************************************************** -->
+       -->
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper site-min-height">
@@ -200,71 +198,14 @@
                     </div>
                   </div>-->
       </div>
-			<!-- **********************************************************************************************************************************************************
-      RIGHT SIDEBAR CONTENT
-      *********************************************************************************************************************************************************** -->                  
+			<!-- RIGHT SIDEBAR CONTENT -->                  
                   
                   <div class="col-lg-3 ds">
                     <!--COMPLETED ACTIONS DONUTS CHART-->
             
                        <!-- USERS ONLINE SECTION -->
             <h3>Friends Online</h3>
-                      <!-- First Member -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <img class="img-circle" src="resources/assets/img/ui-divya.jpg" width="35px" height="35px" align="">
-                        </div>
-                        <div class="details">
-                          <p><a href="#">DIVYA MANIAN</a><br/>
-                             <muted>Available</muted>
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Second Member -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <img class="img-circle" src="resources/assets/img/ui-sherman.jpg" width="35px" height="35px" align="">
-                        </div>
-                        <div class="details">
-                          <p><a href="#">DJ SHERMAN</a><br/>
-                             <muted>I am Busy</muted>
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Third Member -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <img class="img-circle" src="resources/assets/img/ui-danro.jpg" width="35px" height="35px" align="">
-                        </div>
-                        <div class="details">
-                          <p><a href="#">DAN ROGERS</a><br/>
-                             <muted>Available</muted>
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Fourth Member -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <img class="img-circle" src="resources/assets/img/ui-zac.jpg" width="35px" height="35px" align="">
-                        </div>
-                        <div class="details">
-                          <p><a href="#">Zac Sniders</a><br/>
-                             <muted>Available</muted>
-                          </p>
-                        </div>
-                      </div>
-                      <!-- Fifth Member -->
-                      <div class="desc">
-                        <div class="thumb">
-                          <img class="img-circle" src="resources/assets/img/ui-sam.jpg" width="35px" height="35px" align="">
-                        </div>
-                        <div class="details">
-                          <p><a href="#">Marcel Newman</a><br/>
-                             <muted>Available</muted>
-                          </p>
-                        </div>
-                      </div>
-
+                      
                   </div><!-- /col-lg-3 -->
               </div><! --/row -->
 
@@ -277,8 +218,7 @@
       <!--footer start-->
       <footer class="site-footer">
           <div class="text-center">
-              2014 - Alvarez.is
-              <a href="blank.html#" class="go-top">
+              2018 - Travel Wise              <a href="blank.html#" class="go-top">
                   <i class="fa fa-angle-up"></i>
               </a>
           </div>
