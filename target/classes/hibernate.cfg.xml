@@ -19,6 +19,7 @@
         <mapping class="com.emma.network.model.UserRole" />
         <mapping class="com.emma.network.model.Person" />
         <mapping class="com.emma.network.model.Comments" />
+        <mapping class="com.emma.network.model.Uploads"/>
         
         <mapping class="com.emma.network.model.Inbox" />
         <mapping class="com.emma.network.model.Posts" />
