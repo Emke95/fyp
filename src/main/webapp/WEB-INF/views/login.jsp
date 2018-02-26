@@ -16,17 +16,18 @@
 <!-- Custom styles for this template -->
 <link href="resources/assets/css/style.css" rel="stylesheet">
 <link href="resources/assets/css/style-responsive.css" rel="stylesheet">
+
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="resources/assets/js/custom/username.js"></script>
 <script src="resources/assets/js/custom/checkPassword.js"></script>
-<script src="resources/assets/js/custom/validateEmail.js"></script>
+<script src="resources/assets/js/custom/validateEmail.js"></script> 
 
 </head>
 
 <body>
 
-	<!--  MAIN CONTENT****************************************************** -->
+	<!--  MAIN CONTENT -->
 
 	<div id="login-page">
 		<div class="container">
@@ -171,13 +172,14 @@
 	</div>
 
 	<!-- js placed at the end of the document so the pages load faster -->
-	<script src="resources/assets/js/jquery.js"></script>
+	 <script src="resources/assets/js/jquery.js"></script>
 	<script src="resources/assets/js/bootstrap.min.js"></script>
 
 	<script type="text/javascript"
 		src="resources/assets/js/jquery.backstretch.min.js"></script>
+	
 	<script>
-        $.backstretch(["resources/assets/img/login-backdrop.jpg", "resources/assets/img/login-background.jpg"], {fade: 750, duration: 4000});
+        $.backstretch(["resources/assets/img/login-backdrop.jpg", "resources/assets/img/login-background.jpg"]<!--, {fade: 750, duration: 4000}-->);
     </script>
 
 </body>

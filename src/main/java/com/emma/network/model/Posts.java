@@ -18,17 +18,17 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "Posts")
 public class Posts {
-	
+
 	@Id	@GeneratedValue
 	@Column(name = "PostId")
 	private int postId;
-	
+
 	@Column(name = "Status")
 	private String status;
-	
+
 	@Column(name = "Likes")
 	private int likes;
-	
+
 	@Column(name= "DateOfPost")
 	private Date dateOfPost;
 
@@ -36,38 +36,38 @@ public class Posts {
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "PersonId")
 	private Person person;
-		
-	public Person getPerson() {
-			return person;
-		}
-		public void setPerson(Person person) {
-			this.person = person;
-		}
-	
-		//Posts-->Comments
-		//bidirectional mapping
-		@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-		private List<Comments> comments = new ArrayList<Comments>();
 
-		//Posts-->Notifications		
-		@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-		private List<Notification> notifications = new ArrayList<Notification>();
-		
-		
+	public Person getPerson() {
+		return person;
+	}
+	public void setPerson(Person person) {
+		this.person = person;
+	}
+
+	//Posts-->Comments
+	//bidirectional mapping
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private List<Comments> comments = new ArrayList<Comments>();
+
+	//Posts-->Notifications		
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private List<Notification> notifications = new ArrayList<Notification>();
+
+
 	public List<Notification> getNotifications() {
-			return notifications;
-		}
-		public void setNotifications(List<Notification> notifications) {
-			this.notifications = notifications;
-		}
+		return notifications;
+	}
+	public void setNotifications(List<Notification> notifications) {
+		this.notifications = notifications;
+	}
 	public List<Comments> getComments() {
-			return comments;
-		}
-		public void setComments(List<Comments> comments) {
-			this.comments = comments;
-		}
-		
-		
+		return comments;
+	}
+	public void setComments(List<Comments> comments) {
+		this.comments = comments;
+	}
+
+
 	public int getPostId() {
 		return postId;
 	}

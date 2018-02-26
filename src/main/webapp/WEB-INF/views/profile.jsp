@@ -297,15 +297,14 @@
 						<c:if test="${sessionScope.user.getuId() == person.getpId()}">
 							<div class="row mtpost">
 								<div class="form-panel">
-									<h4>Keep Calm and Share On....</h4>
+									<h4>Post</h4>
 									<form class="form-horizontal tasi-form" action="addPosts"
 										method="POST" role="form">
 										<div class="form-group">
 											<textarea class="form-control form-post" name="status"
-												id="status" placeholder="Interest your buddies"></textarea>
+												id="status" placeholder="Write a status"></textarea>
 										</div>
-										<button type="submit" class="btn btn-theme">Spread
-											it!</button>
+										<button type="submit" class="btn btn-theme">Share!</button>
 									</form>
 								</div>
 							</div>

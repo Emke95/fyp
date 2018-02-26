@@ -29,17 +29,17 @@
 <script src="resources/assets/js/custom/readNotification.js"></script>
 <script src="resources/assets/js/custom/readMessages.js"></script>
 <script type="text/javascript">
-    
-    </script>
+	
+</script>
 
 </head>
 
 <body>
 	<%
-//   response.addHeader("Cache-Control", "no-cache,no-store,private,must-revalidate,max-stale=0,post-check=0,pre-check=0"); 
-//   response.addHeader("Pragma", "no-cache"); 
-//   response.addDateHeader ("Expires", 0);
-   %>
+		//   response.addHeader("Cache-Control", "no-cache,no-store,private,must-revalidate,max-stale=0,post-check=0,pre-check=0"); 
+		//   response.addHeader("Pragma", "no-cache"); 
+		//   response.addDateHeader ("Expires", 0);
+	%>
 	<section id="container">
 		<!-- *TOP BAR CONTENT & NOTIFICATIONS -->
 		<!--header start-->
@@ -185,7 +185,7 @@
 									method="POST" action="addPosts">
 									<div class="form-group">
 										<textarea class="form-control form-post" name="status"
-											id="status" placeholder="Status"></textarea>
+											id="status" placeholder="Write a status"></textarea>
 									</div>
 									<button type="submit" class="btn btn-theme">Share!</button>
 								</form:form>
@@ -195,12 +195,9 @@
 									<div class="form-group">
 										<textarea class="form-control form-post" name="caption"
 											id="caption" placeholder="Tell us about this photo"></textarea>
-
-
 									</div>
 									<button type="submit" class="btn btn-theme">Share!</button>
 								</form:form>
-
 
 							</div>
 							<!-- /col-lg-9 -->
