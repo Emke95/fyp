@@ -57,6 +57,12 @@ public class UploadController {
 	protected void initBinder(WebDataBinder binder) {
 		binder.setValidator(fileValidator);
 	}
+	
+	@RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
+	public String submit(@RequestParam("file") MultipartFile file, ModelMap modelMap) {
+	    modelMap.addAttribute("file", file);
+	    return "fileUploadView";
+	}
 
 	@RequestMapping(value= "/upload", method = RequestMethod.GET)
 	public String getUpload(Model model, @RequestParam("uploadId") String uploadId, HttpServletRequest request)

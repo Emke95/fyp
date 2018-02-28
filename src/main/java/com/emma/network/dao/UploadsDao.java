@@ -61,6 +61,26 @@ public class UploadsDao extends DAO {
 	public void saveDocument(Uploads upload) {
 		getSession().persist(upload);
 	}
+	public void save(Uploads upload){
+		Session session = HibernateUtil.getSessionFactory().openSession();
+		try
+		{
+			Date today = new Date();
+			upload.setDateOfPost(today);
+			Transaction transaction = session.beginTransaction();
+			session.save(upload);
+			transaction.commit();
+		}
+		catch(Exception e)
+		{
+			System.out.println("Hello " + e.getMessage());
+		}
+		finally
+		{
+			session.close();
+		}
+	}
+	
 
 
 }

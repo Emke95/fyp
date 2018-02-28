@@ -115,7 +115,7 @@ public class UserDao extends DAO {
 			session.close();
 		}
 	}
-
+	
 	public String searchAll(UserAccount user, String value, ArrayList<Friends> friendList)
 	{
 		Query q = getSession().createQuery("from Person where (firstname LIKE :value OR lastname LIKE :value) and personid != :personid");
